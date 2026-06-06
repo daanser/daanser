@@ -1,0 +1,36 @@
+name: Generate Pac-Man Contribution Graph
+
+on:
+  schedule:
+    # 每天北京时间早上 8 点（UTC 0点）自动更新一次地图
+    - cron: "0 0 * * *" 
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 这里直接调用你截图里那位大佬（或者类似的开源者）写好的吃豆人渲染引擎
+      - name: Generate Pac-Man animation
+        uses: Platane/snk@v3 # 注：目前生态里最稳定的是基于 Platane 的贪吃蛇魔改，吃豆人同理
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-pacman.svg
+            dist/github-contribution-grid-pacman-dark.svg?palette=github-dark
+
+      - name: Push to build branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
