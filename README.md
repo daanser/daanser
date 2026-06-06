@@ -6,12 +6,7 @@ _“Keep coding, keep playing.”_
 
 <br>
 
-### 🕹️ INSERT COIN TO PLAY 🕹️
-<a href="https://freepacman.org/" target="_blank">
-  <img src="https://media1.giphy.com/media/11s6yE7vQjXFp6/giphy.gif" width="400" alt="Play Pac-Man" />
-</a>
 
-<br><br>
 
 ### 🛠️ 核心技术栈
 <p align="center">
@@ -28,5 +23,14 @@ _“Keep coding, keep playing.”_
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=daanser&theme=tokyonight&hide_border=true&fire=F5A9B8" alt="GitHub Streak" />
 </p>
+
+### 🕹️ PLAYING WITH MY CODE 🕹️
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/daanser/daanser/output/github-contribution-grid-pacman-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/daanser/daanser/output/github-contribution-grid-pacman.svg">
+  <img alt="Pac-Man Contribution Graph" src="https://raw.githubusercontent.com/daanser/daanser/output/github-contribution-grid-pacman.svg">
+</picture>
+<br><br>
+
 
 </div>
