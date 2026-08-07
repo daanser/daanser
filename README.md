@@ -8,7 +8,7 @@ _“Keep coding, keep playing.”_
 ### 🛠️ 核心技术栈
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=flutter,dart,python,apple,vscode,github,bash&theme=dark" />
+    <img src="https://skillicons.dev/icons?i=flutter,dart,python,apple,debian,gmail,vscode,cloudflare,github,bash&theme=dark" />
   </a>
 </p>
 
